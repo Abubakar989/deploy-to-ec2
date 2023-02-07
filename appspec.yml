@@ -5,11 +5,11 @@ files:
     destination: /home/ubuntu
 hooks:
   AfterInstall:
-    - location: afterinstall.sh
+    - location: scripts/AfterInstallHook.sh
       timeout: 100
       runas: root
 
   ApplicationStart:
-    - location: applicationstart.sh
+    - location: scripts/ApplicationStartHook.sh
       timeout: 100
       runas: root
